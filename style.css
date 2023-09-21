@@ -1,0 +1,66 @@
+:root {
+    /* colores */
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+
+    /* fuente */
+    --fuente: 'Outfit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor__general {
+    width: 99%;
+    min-width: 315px;
+    margin: 100px auto;
+    background: var(--Grayishblue);
+    padding: 20px;
+}
+
+.contenedor__qr {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: var(--Lightgray);
+    border-radius: 13px;
+    min-width: 280px;
+}
+
+.contenedor__qr img,
+.contenedor__qr h2,
+.contenedor__qr p {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 13px;
+}
+
+.contenedor__qr h2 {
+    font-size: 1.3rem;
+    font-family: var(--fuente);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.contenedor__qr p {
+    font-size: 14px;
+    color: var(--Grayishblue);
+    opacity: 1;
+}
+
+@media screen and (min-width: 391px) {
+    /* .contenedor__general {
+        max-width: 380px;
+    } */
+
+    .contenedor__qr {
+        max-width: 300px;
+    }
+}
